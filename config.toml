@@ -20,7 +20,7 @@ taxonomies = [
 # Whether to do syntax highlighting
 # Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
 highlight_code = true
-highlight_theme = "agola-dark"
+highlight_theme = "monokai"
 
 [extra]
 # Put all your custom variables here
@@ -30,7 +30,7 @@ latest_posts = 5
 
 main_menu = [
   {name = "Home", url = "/"},
-  {name = "Blogs", url = "/blog/"},
-  {name = "Snippets", url = "/snippets/"},
+  {name = "Blogs", url = "/blog"},
+  {name = "Snippets", url = "/snippets"},
 ]
 
