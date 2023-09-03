@@ -25,8 +25,12 @@ highlight_theme = "agola-dark"
 [extra]
 # Put all your custom variables here
 
-links = [
-    { title = "Mail", href = "mailto:example@example.com" },
-    { title = "GitHub", href = "https://github.com" },
-    { title = "LinkedIn", href = "https://linkedin.com" }
+# latest posts determines how many latest posts to show on homepage
+latest_posts = 5
+
+main_menu = [
+  {name = "Home", url = "/"},
+  {name = "Blogs", url = "/blog/"},
+  {name = "Snippets", url = "/snippets/"},
 ]
+

@@ -5,7 +5,12 @@
 
 {% block header %}
 <header class="space">
-    <a href="{{ config.base_url }}">&LeftArrow; Home</a>
+    <!-- <a href="{{ config.base_url }}">&LeftArrow; Home</a> -->
+    <nav>
+        {% for item in config.extra.main_menu %}
+          <a href="{{item.url}}">{{item.name}}</a> 
+        {% endfor %}
+    </nav>       
 </header>
 {% endblock header %}
 
@@ -13,7 +18,7 @@
 <main>
     <h1>{{ page.title }}</h1>
     {% if page.date %}
-    <p class="secondary">{{ page.date | date(format="%-d %B, %Y") }}</p>
+    <p class="secondary">{{ page.date | date(format="%-d %B %Y") }}</p>
     {% endif %}
     <div class="space"></div>
     {{ page.content | safe }}
