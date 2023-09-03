@@ -22,7 +22,7 @@
         {% if config.extra.links or linked_pages %}
         <nav>
             {% for item in config.extra.main_menu %}
-              <a href="{{item.url}}">{{item.name}}</a> 
+                <a href="{{ config.base_url ~ item.url }}">{{item.name}}</a> 
             {% endfor %}
         </nav>          
         {% endif %}
